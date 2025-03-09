@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theme chhange project</title>
+  <style>
+    #basir{
+      height: 200px;
+      width: 200px;
+      /* color:aliceblue; */
+    }
+  </style>
+</head>
+<body id="hamar">
+  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti aspernatur unde vero, quos quas error hic sed expedita ad consequatur libero quaerat magni rerum distinctio fugiat autem! Fuga nulla velit incidunt quidem iure quo atque facere fugit cupiditate cumque perferendis, aspernatur cum. Enim dicta perspiciatis illum facilis architecto, hic sed. Sequi nisi, in nam minus esse veritatis. Debitis quaerat a culpa aliquid itaque ea distinctio sint vel necessitatibus? Voluptatem dolores itaque maxime mollitia cumque, deleniti animi a nulla amet voluptates nesciunt iure facere assumenda. Possimus soluta placeat tempore delectus officia laborum quidem asperiores maxime ipsum ad, ullam assumenda nostrum excepturi.
+  <div id="basir">
+    <button id="bas" style="background-color: aliceblue; height: 40px; width: 60px;;">light</button>
+    <button id="bas1" style="background-color: black;height: 40px; width: 60px; color: white; " >Dark</button>
+  </div>
+
+  <script>
+    let mainval=document.getElementById('hamar');
+
+    let kamwalaval=document.getElementById('basir');
+
+    kamwalaval.addEventListener('click',function(e){
+      console.log(e);
+      let coll=e.target.id;
+      console.log(coll);
+      if(coll==="bas"){
+        mainval.style.backgroundColor="white";
+        mainval.style.color="black"
+      }else{
+        mainval.style.backgroundColor="black";
+        mainval.style.color="white";
+        //the value of the text is somuch of the eass
+      }
+    })
+
+  </script>
+  
+</body>
+</html>
